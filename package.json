@@ -1,0 +1,32 @@
+{
+  "name": "best-before-twin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Predict unsold food before it becomes waste - AI for Climate Youth Hackathon / COP31",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "generate:data": "node scripts/generate-sample-sales.mjs",
+    "export:plan": "node scripts/export-plan.mjs"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "undici": "^6.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "license": "MIT"
+}
